@@ -1,12 +1,29 @@
-## Hi there 👋
+# Yes I Can - CGV 챗봇 예매
 
-<!--
+## 프로젝트 소개
+### 계기
+---
+아르바이트를 하며 직접 목격한 어르신 분들의 불편함을 해결하고자 챗봇을 이용한 채팅, 음성 예매 서비스를 구현하였습니다.
 
-**Here are some ideas to get you started:**
+인식한 문제점
+---
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+## 사용법 및 시나리오
+### 채팅을 통한 예매
+---
+1.
+2.
+
+### 음성을 통한 예매
+---
+1.
+2.
+
+## 주요 기능
+### [채팅을 통한 예매]
+
+## 서비스 아키텍쳐
+
+## 기술 스택
+
+## 팀 소개
