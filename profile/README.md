@@ -1,5 +1,5 @@
 # Yes I Can - CGV 챗봇 예매
-
+![alt text](<images/Group 33.jpg>)
 ## 프로젝트 소개
 ### 계기
 ---
