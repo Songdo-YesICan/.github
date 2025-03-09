@@ -11,19 +11,19 @@
 인식한 문제점
 ---
 **1. 보안 문제**
-   * 웹 애플리케이션을 보호하기 위해 WAF 활용
-   * IAM 사용자의 Access Key를 순환시키기 위해 Secret Manager 활용
-   * 데이터 암호화를 위한 키를 생성 및 관리하기 위해 KMS 활용
-   * 사용자를 세분화하고 최소 권한을 부여하기 위해 IAM 활용
+   * 웹 애플리케이션을 보호하기 위해 `WAF` 활용
+   * `IAM` 사용자의 `Access Key`를 순환시키기 위해 `Secret Manager` 활용
+   * 데이터 암호화를 위한 키를 생성 및 관리하기 위해 `KMS` 활용
+   * 사용자를 세분화하고 최소 권한을 부여하기 위해 `IAM` 활용
      
 **2. 비용 문제**
-   * Cluster Node의 인스턴스 유형을 최적화하기 위해 t3.medium으로 설정
-   * EC2 스팟 인스턴스를 활용해 Jenkins CI를 구축하여 온디맨드 인스턴스 대비 최대 90% 비용 절약
+   * `Cluster Node`의 인스턴스 유형을 최적화하기 위해 `t3.medium`으로 설정
+   * `EC2 스팟 인스턴스`를 활용해 `Jenkins CI`를 구축하여 `온디맨드 인스턴스` 대비 최대 90% 비용 절약
 
 **3. 가용성 문제**
-   * 트래픽을 분산시키기 위해 ALB 활용
-   * Kubernetes 환경에서의 고가용성을 위해 HPA, Karpenter 활용
-   * Database의 고가용성을 위해 Aurora Cluster, Read Replica 활용
+   * 트래픽을 분산시키기 위해 `ALB` 활용
+   * `Kubernetes` 환경에서의 고가용성을 위해 `HPA`, `Karpenter` 활용
+   * `Database`의 고가용성을 위해 `Aurora Cluster`, `Read Replica` 활용
 
 
 ## 사용법 및 시나리오
@@ -51,7 +51,7 @@
 
 **1. 대규모 예매 트래픽을 대비한 높은 확장성과 가용성**
 - Kubernetes
-<br>front, backend 서버를 구성하는 쿠버네티스 환경에서는 `ReplicaSet`, `HPA`, `Karpenter` 3가지 리소스로 고가용성을 확보하였습니다. 또한 `Karpenter`를 사용하여 일반 `쿠버네티스 CA`보다 약 2배 빠른 Scaling 속도 확보하였습니다.
+<br>frontend와 backend 서버를 구성하는 쿠버네티스 환경에서는 `ReplicaSet`, `HPA`, `Karpenter` 3가지 리소스로 고가용성을 확보하였습니다. 또한 `Karpenter`를 사용하여 일반 `쿠버네티스 CA` 대비 약 2배 빠른 Scaling 속도 확보하였습니다.
 
     <img src="https://github.com/user-attachments/assets/1d96660c-12d6-470f-9282-704024165055" height="350"/>
 <!-- 임시 주석 처리 <img src="https://github.com/user-attachments/assets/1d96660c-12d6-470f-9282-704024165055" width="250" height="400"/> -->
