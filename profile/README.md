@@ -49,22 +49,27 @@
 
 사용자가 시스템에 접근하여 서비스를 이용하게 되는 환경입니다. 때문에 아래의 3가지를 중점적으로 신경 썼습니다.
 
-1. 가용성
-   - Kubernetes
-front, backend 서버를 구성하는 쿠버네티스 환경에서는 **ReplicaSet, HPA, Karpenter** 3가지 리소스로 고가용성을 확보하였습니다. 또한 Karpenter를 사용하여 일반 쿠버네티스 CA보다 약 2배 빠른 Scaling 속도 확보하였습니다.
+**1. 대규모 예매 트래픽을 대비한 높은 확장성과 가용성**
+- Kubernetes
+<br>front, backend 서버를 구성하는 쿠버네티스 환경에서는 `ReplicaSet`, `HPA`, `Karpenter` 3가지 리소스로 고가용성을 확보하였습니다. 또한 `Karpenter`를 사용하여 일반 `쿠버네티스 CA`보다 약 2배 빠른 Scaling 속도 확보하였습니다.
 
-<img src="https://github.com/user-attachments/assets/1d96660c-12d6-470f-9282-704024165055" width="250" height="400"/>
+    <img src="https://github.com/user-attachments/assets/1d96660c-12d6-470f-9282-704024165055" height="350"/>
+<!-- 임시 주석 처리 <img src="https://github.com/user-attachments/assets/1d96660c-12d6-470f-9282-704024165055" width="250" height="400"/> -->
 
   - Database
-**Aurora Cluster**를 사용하여 장애 발생 시 Read Replica의 빠른 failover를 확보하였습니다.
-**Read Replica**로 읽기, 쓰기 작업을 분리하여 부하를 분산시켰습니다.
-<img src="https://github.com/user-attachments/assets/1cd0d391-6a5e-43fc-9344-c94ccc54f860" width="400" height="400"/>
+<br>`Aurora Cluster`를 사용하여 장애 발생 시 `Read Replica`의 빠른 failover를 확보하였습니다.
+`Read Replica`로 읽기, 쓰기 작업을 분리하여 부하를 분산시켰습니다.<br>
+    <img src="https://github.com/user-attachments/assets/1cd0d391-6a5e-43fc-9344-c94ccc54f860" height="350"/>
+<!-- 임시 주석 처리 <img src="https://github.com/user-attachments/assets/1cd0d391-6a5e-43fc-9344-c94ccc54f860" width="400" height="400"/> -->
+
+**2. 장애 및 보안 위협 예방과 신속한 대응을 위한 모니터링**
 
 
-3. Monitoring
-
-4. ETL Pipeline
+**3. 인공지능 학습을 위한 데이터 ETL 파이프라인**
 
 ## 기술 스택
+**1. Jenkins + ArgoCD (CI/CD)** <br>
+<img src="images/cicd.svg" height="450">
 
 ## 팀 소개
+<img src="images/team.png" height="450">
