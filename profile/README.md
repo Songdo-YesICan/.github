@@ -38,6 +38,8 @@ front, backend 서버를 구성하는 쿠버네티스 환경에서는 **ReplicaS
   - Database
 **Aurora Cluster**를 사용하여 장애 발생 시 Read Replica의 빠른 failover를 확보하였습니다.
 **Read Replica**로 읽기, 쓰기 작업을 분리하여 부하를 분산시켰습니다.
+![image](https://github.com/user-attachments/assets/1cd0d391-6a5e-43fc-9344-c94ccc54f860)
+
 
 3. Monitoring
 
