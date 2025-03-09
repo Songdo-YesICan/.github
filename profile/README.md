@@ -2,6 +2,7 @@
 <p align="center">
   <img src="images/Group 33.jpg" width="300">
 </p>
+
 ## 프로젝트 소개
 ### 계기
 ---
