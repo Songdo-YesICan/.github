@@ -33,7 +33,7 @@
    - Kubernetes
 front, backend 서버를 구성하는 쿠버네티스 환경에서는 **ReplicaSet, HPA, Karpenter** 3가지 리소스로 고가용성을 확보하였습니다. 또한 Karpenter를 사용하여 일반 쿠버네티스 CA보다 약 2배 빠른 Scaling 속도 확보하였습니다.
 
-<img src="https://github.com/user-attachments/assets/1d96660c-12d6-470f-9282-704024165055" width="100" height="400"/>
+<img src="https://github.com/user-attachments/assets/1d96660c-12d6-470f-9282-704024165055" width="250" height="400"/>
 
   - Database
 **Aurora Cluster**를 사용하여 장애 발생 시 Read Replica의 빠른 failover를 확보하였습니다.
