@@ -7,6 +7,19 @@
 
 인식한 문제점
 ---
+**1. 보안 문제**
+   * 웹 애플리케이션을 보호하기 위해 WAF 활용
+   * IAM 사용자의 Access Key를 순환시키기 위해 Secret Manager 활용
+   * 데이터 암호화를 위한 키를 생성 및 관리하기 위해 KMS 활용
+   * 사용자를 세분화하고 최소 권한을 부여하기 위해 IAM 활용
+**2. 비용 문제**
+   * Cluster Node의 인스턴스 유형을 최적화하기 위해 t3.medium으로 설정
+   * EC2 스팟 인스턴스를 활용해 Jenkins CI를 구축하여 온디맨드 인스턴스 대비 최대 90% 비용 절약 
+**3. 가용성 문제**
+   * 트래픽을 분산시키기 위해 ALB 활용
+   * Kubernetes 환경에서의 고가용성을 위해 HPA, Karpenter 활용
+   * Database의 고가용성을 위해 Aurora Cluster, Read Replica 활용
+
 
 ## 사용법 및 시나리오
 ### [예매]
