@@ -8,7 +8,7 @@
 ---
 아르바이트를 하며 직접 목격한 어르신 분들의 불편함을 해결하고자 챗봇을 이용한 채팅, 음성 예매 서비스를 구현하였습니다.
 
-인식한 문제점
+인식한 문제점과 선택한 해결 방안
 ---
 **1. 보안 문제**
    * 웹 애플리케이션을 보호하기 위해 `WAF` 활용
@@ -47,11 +47,11 @@
 ### Production 환경
 ![production 환경](images/production.svg)
 
-사용자가 시스템에 접근하여 서비스를 이용하게 되는 환경입니다. 때문에 아래의 3가지를 중점적으로 신경 썼습니다.
+사용자가 시스템에 접근하여 서비스를 이용하게 되는 환경입니다. 때문에 아래의 3가지를 중점적으로 production 환경을 구축하였습니다.
 
 **1. 대규모 예매 트래픽을 대비한 높은 확장성과 가용성**
 - Kubernetes
-<br>frontend와 backend 서버를 구성하는 쿠버네티스 환경에서는 `ReplicaSet`, `HPA`, `Karpenter` 3가지 리소스로 고가용성을 확보하였습니다. 또한 `Karpenter`를 사용하여 일반 `쿠버네티스 CA` 대비 약 2배 빠른 Scaling 속도 확보하였습니다.
+<br>frontend와 backend 서버를 구성하는 쿠버네티스 환경에서는 `ReplicaSet`, `HPA`, `Karpenter` 3가지 리소스로 고가용성을 확보하였습니다. 또한 `Karpenter`를 사용하여 일반 `쿠버네티스 CA` 대비 약 2배 빠른 Scaling 속도를 확보하였습니다.
 
     <img src="https://github.com/user-attachments/assets/1d96660c-12d6-470f-9282-704024165055" height="350"/>
 <!-- 임시 주석 처리 <img src="https://github.com/user-attachments/assets/1d96660c-12d6-470f-9282-704024165055" width="250" height="400"/> -->
